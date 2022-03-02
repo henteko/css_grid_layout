@@ -5,6 +5,36 @@ body {
 
   display: grid;
   grid-template-columns: 0.5fr 2fr;
+  gap: 10px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.menus > div {
+  border-bottom: solid 0.5px lightgray;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.menus > div:last-child {
+  border-bottom: initial;
+}
+
+.menu-title { 
+  display: grid;
+  place-items: center;
+  height: 50px;
+}
+
+.menu {
+  display: grid;
+  place-items: center;
+  height: 50px;
+
+  text-decoration: initial;
+  color: black;
 }
 
 .contents {
