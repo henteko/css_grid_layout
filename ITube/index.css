@@ -1,0 +1,28 @@
+body {
+  /* 全画面表示 */
+  height: 100vh;
+  margin: 0px;
+
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+}
+
+.contents {
+  display: grid;
+  grid-template-rows: 50px 50px 1fr;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.video {
+  display: grid;
+  grid-template-rows: 150px 1fr;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
