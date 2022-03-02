@@ -15,14 +15,26 @@ body {
 .videos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .video {
   display: grid;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 10px;
 }
 
 .description {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 1fr 4fr;
+  gap: 8px;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.icon {
+  width: 100%;
+  border-radius: 50%;
 }
