@@ -6,7 +6,7 @@ body {
   align-items: center;
 }
 
-#dot {
+#editor {
   display: grid;
   grid-template-columns: repeat(50, 10px);
   grid-template-rows: repeat(50, 10px);
@@ -17,6 +17,6 @@ body {
   border: 1px solid black;
 }
 
-#dot > div {
+#editor > .dot {
   border: 0.1px solid lightgray;
 }
