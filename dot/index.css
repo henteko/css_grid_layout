@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dot {
+  display: grid;
+  grid-template-columns: repeat(50, 10px);
+  grid-template-rows: repeat(50, 10px);
+
+  width: 500px;
+  height: 500px;
+
+  border: 1px solid black;
+}
+
+#dot > div {
+  border: 0.1px solid lightgray;
+}

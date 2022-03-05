@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dot/index.css">
+  <title>dot</title>
+
+</head>
+
+<body>
+  <div id="dot"></div>
+</body>
+<script>
+  function draw() {
+    this.style.backgroundColor = 'black';
+  }
+
+  for (let step = 0; step < 2500; step++) {
+    const div = document.createElement("div");
+    div.addEventListener('click', draw);
+    document.querySelector('#dot').append(div);
+  }
+</script>
+
+</html>
