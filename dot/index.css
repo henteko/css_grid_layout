@@ -1,12 +1,40 @@
 body {
   height: 100vh;
+  margin: 0px;
+
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 50px;
+  grid-template-areas: "header header"
+                       "palette editor";
+}
+
+@media screen and (max-width: 730px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 2fr 1fr;
+    grid-template-areas: "header"
+                         "editor"
+                         "palette";
+  }
+}
+
+.header {
+  grid-area: header;
+
+  background-color: aqua;
+}
+
+.editor {
+  grid-area: editor;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: gray;
 }
 
-#editor {
+#dot-area {
   display: grid;
   grid-template-columns: repeat(50, 10px);
   grid-template-rows: repeat(50, 10px);
@@ -14,9 +42,16 @@ body {
   width: 500px;
   height: 500px;
 
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
-#editor > .dot {
+#dot-area > .dot {
+  background-color: white;
   border: 0.1px solid lightgray;
+}
+
+.palette {
+  grid-area: palette;
+
+  background-color: pink;
 }
