@@ -36,8 +36,8 @@ body {
 
 #dot-area {
   display: grid;
-  grid-template-columns: repeat(50, 10px);
-  grid-template-rows: repeat(50, 10px);
+  grid-template-columns: repeat(25, 20px);
+  grid-template-rows: repeat(25, 20px);
 
   width: 500px;
   height: 500px;
@@ -53,5 +53,12 @@ body {
 .palette {
   grid-area: palette;
 
-  background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20px);
+  grid-template-rows: repeat(auto-fill, 20px);
+}
+
+.palette > .palette-value {
+  border: 0.1px solid lightgray;
+  cursor: pointer;
 }
