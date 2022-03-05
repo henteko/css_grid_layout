@@ -22,7 +22,17 @@ body {
 .header {
   grid-area: header;
 
-  background-color: aqua;
+  background-color: #404040;
+  border-bottom: 1px solid white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > .logo {
+  color: white;
+  font-size: x-large;
 }
 
 .editor {
@@ -31,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: #404040;
 }
 
 #dot-area {
@@ -56,6 +66,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, 20px);
   grid-template-rows: repeat(auto-fill, 20px);
+
+  background-color: #707070;
 }
 
 .palette > .palette-value {
